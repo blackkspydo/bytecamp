@@ -19,9 +19,9 @@ export function Hero() {
               mentors{"\n                  "}
             </h2>
             <p className="mb-8 text-gray-600">
-              The good gathering doesn&apos;t bearing day stars over open behold
-              may male tree replenish don&apos;t blessed beast days earth fifth
-              let multiply and he every blessed.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              labore fugiat perspiciatis, dolorem aspernatur iste aliquid eaque
+              quam ea repellat!
             </p>
             <div className="flex gap-4">
               <a

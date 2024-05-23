@@ -1,5 +1,10 @@
-import { FacebookIcon, InstagramIcon, LinkedinIcon, XIcon } from "lucide-react";
-import Image from "next/image";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  HeartIcon,
+  LinkedinIcon,
+  XIcon,
+} from "lucide-react";
 import Link from "next/link";
 import Logo from "./icons/logo";
 
@@ -33,161 +38,62 @@ export function Footer() {
                 <XIcon className="h-6 w-6" />
               </Link>
             </div>
-            <p className="text-center text-gray-400">
-              Designed by
-              <Link className="ml-1" href="https://blackkspydo.com">
-                blackkspydo
-              </Link>
-            </p>
           </div>
-          <div className="mt-12 flex grid grid-cols-2 flex-col items-center justify-center gap-8 xl:col-span-4 xl:mt-0">
-            <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 md:gap-8">
-              <div className="flex flex-col items-center justify-center">
-                <h3 className="text-center text-sm font-semibold uppercase tracking-wider text-gray-400">
-                  Pages
-                </h3>
-                <ul className="mt-4 flex flex-col items-center justify-center space-y-4">
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Courses{" "}
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Events
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      FAQs
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Contact Us
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3 className="text-center text-sm font-semibold uppercase tracking-wider text-gray-400">
-                  CMS page
-                </h3>
-                <ul className="mt-4 flex flex-col items-center justify-center space-y-4">
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Courses
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Courses Categories
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Event
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Teacher
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2 md:gap-8">
-              <div className="flex flex-col items-center justify-center">
-                <h3 className="text-center text-sm font-semibold uppercase tracking-wider text-gray-400">
-                  User page
-                </h3>
-                <ul className="mt-4 flex flex-col items-center justify-center space-y-4">
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Style Guide
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Licenses
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Instructions
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Changelog
-                    </Link>
-                  </li>
-                  <li className="text-center">
-                    <Link
-                      className="text-base text-gray-300 hover:text-white"
-                      href="#"
-                    >
-                      Coming Soon
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div className="mt-12 flex  grid-cols-2 flex-col items-center justify-center gap-8 xl:col-span-4 xl:mt-0">
+            <ul className="mt-4 flex flex-row flex-wrap items-center justify-center space-x-9 space-y-2">
+              <li className="block text-center">
+                <Link
+                  className="block text-base text-gray-300 hover:text-white"
+                  href="#"
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="block text-center">
+                <Link
+                  className="block text-base text-gray-300 hover:text-white"
+                  href="#"
+                >
+                  Courses{" "}
+                </Link>
+              </li>
+              <li className="block text-center">
+                <Link
+                  className="block text-base text-gray-300 hover:text-white"
+                  href="#"
+                >
+                  Events
+                </Link>
+              </li>
+              <li className="block text-center">
+                <Link
+                  className="block text-base text-gray-300 hover:text-white"
+                  href="#"
+                >
+                  FAQs
+                </Link>
+              </li>
+              <li className="block text-center">
+                <Link
+                  className="block text-base text-gray-300 hover:text-white"
+                  href="#"
+                >
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
+      <div className="flex w-full flex-col items-center justify-between gap-4 border-t border-gray-500 p-4 md:flex-row">
+        <p className="flex items-center justify-end gap-2 text-center text-gray-400">
+          Copyright © {new Date().getFullYear()} Bytecamp
+        </p>
+        <p className="flex items-center justify-end gap-2 text-nowrap text-center text-gray-400">
+          Designed by
+          <Link href="https://blackkspydo.com">blackkspydo</Link>
+          with <HeartIcon style={{ fill: "red", stroke: "none" }} />
+        </p>
       </div>
     </footer>
   );

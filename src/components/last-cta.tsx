@@ -16,7 +16,7 @@ export function LastCta() {
           </p>
           <Button
             variant="outline"
-            className="ticker relative flex h-20 w-[25vw] min-w-[150px] max-w-[600px] cursor-pointer items-center overflow-hidden rounded-full border-black bg-transparent  py-10 text-black"
+            className="ticker relative flex h-20 w-full min-w-[300px] max-w-[600px] cursor-pointer items-center overflow-hidden rounded-full border-black bg-transparent  py-10 text-black"
           >
             <div className="button-ticker font-helvetica absolute left-1/2  top-1/2 flex w-full  transform  flex-row items-center gap-20 text-3xl font-light transition-opacity duration-200 ease-out">
               <span>Enroll Now !!!</span>
