@@ -18,7 +18,8 @@ const config = {
       },
     },
     fontFamily: {
-      sans: ["sora"],
+      sora: ["sora", "sans"],
+      helvetica: ["Helvetica Now Display", "sans"],
     },
     extend: {
       colors: {
@@ -54,6 +55,15 @@ const config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        keyframes: {
+          slide: {
+            "0%": { transform: "translateX(100%)" },
+            "100%": { transform: "translateX(-100%)" },
+          },
+        },
+        animation: {
+          slide: "slide 10s linear infinite",
         },
       },
       borderRadius: {
