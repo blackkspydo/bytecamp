@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import { LastCta } from "@/components/last-cta";
 import NavBar from "@/components/nav";
 import "@/styles/globals.css";
 import { Sora } from "next/font/google";
@@ -22,8 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`bg-[#FEF8EF] ${sora.className}`}>
-      <NavBar />
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        {children}
+        <LastCta />
+      </body>
     </html>
   );
 }
