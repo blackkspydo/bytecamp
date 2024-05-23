@@ -1,7 +1,6 @@
 import Header from "@/components/header";
 import NavBar from "@/components/nav";
 import "@/styles/globals.css";
-
 import { Sora } from "next/font/google";
 
 export const metadata = {
