@@ -18,7 +18,7 @@ export default function Testimonial({
   onClick,
 }: Readonly<TestimonialProps>) {
   return (
-    <article className="flex min-w-[400px]  flex-col max-md:ml-0 max-md:w-full md:min-w-[500px]">
+    <article className="flex min-w-[300px] flex-col max-md:ml-0 max-md:w-full md:min-w-[500px]">
       <section className="flex grow flex-col justify-center max-md:mt-7">
         <button
           onClick={onClick}

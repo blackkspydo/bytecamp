@@ -17,7 +17,7 @@ export function CourseCard() {
   return (
     <Card
       key="1"
-      className="relative w-full min-w-[380px] max-w-[433px] rounded-[10px] border-none bg-white p-1"
+      className="relative w-full shadow-none min-w-[380px] max-w-[433px] rounded-[12px] border-none bg-white p-1"
     >
       <CardHeader className="absolute right-5 top-5 flex flex-row items-center gap-2 rounded-full border bg-white p-1">
         <Avatar>
@@ -31,7 +31,7 @@ export function CourseCard() {
         <div className="mr-2 pb-2 text-sm font-semibold">Billy Vasquez</div>
       </CardHeader>
       <CardContent className="flex flex-col items-start p-2">
-        <div className="mb-4 max-h-[250px] w-full overflow-hidden rounded-[10px]">
+        <div className="mb-4 max-h-[250px] w-full overflow-hidden rounded-[8px]">
           <Image
             alt="Graphic Design Masterclass"
             className="h-full w-full"
@@ -66,8 +66,8 @@ export function CourseCard() {
       </CardContent>
       <CardFooter className="pt-4">
         <div className="flex w-full flex-row items-center justify-start gap-4 text-center">
-          <div className="text-2xl font-bold">$450.00 USD</div>
-          <div className="text-sm text-gray-500 line-through">$4600.00 USD</div>
+          <div className="text-2xl text-[#89B597] font-bold">NPR 450</div>
+          <div className="text-sm text-gray-500 line-through">NPR 460</div>
         </div>
       </CardFooter>
     </Card>
