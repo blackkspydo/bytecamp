@@ -1,6 +1,8 @@
+import Header from "@/components/header";
+import NavBar from "@/components/nav";
 import "@/styles/globals.css";
 
-import { GeistSans } from "geist/font/sans";
+import { Sora } from "next/font/google";
 
 export const metadata = {
   title: "Create T3 App",
@@ -8,13 +10,20 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
+const sora = Sora({
+  preload: true,
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html lang="en" className={`bg-[#FEF8EF] ${sora.className}`}>
+      <NavBar />
       <body>{children}</body>
     </html>
   );
