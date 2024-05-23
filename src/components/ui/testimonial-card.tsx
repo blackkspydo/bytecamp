@@ -18,7 +18,7 @@ export default function Testimonial({
   onClick,
 }: Readonly<TestimonialProps>) {
   return (
-    <article className="flex min-w-[300px] flex-col max-md:ml-0 max-md:w-full md:min-w-[500px]">
+    <article className="flex min-w-[300px] snap-start flex-col max-md:ml-0 max-md:w-full md:min-w-[500px]">
       <section className="flex grow flex-col justify-center max-md:mt-7">
         <button
           onClick={onClick}
@@ -27,7 +27,13 @@ export default function Testimonial({
           <div className="flex flex-col">
             <div className="flex gap-2 pr-20 max-md:pr-5">
               {imageSrcs.map((src, index) => (
-                <StarIcon className="h-6 w-6 text-yellow-500" key={index} />
+                <StarIcon
+                  className="h-6 w-6 text-[#FFC107]"
+                  style={{
+                    fill: "currentColor",
+                  }}
+                  key={index}
+                />
               ))}
             </div>
             <div className="mt-6 flex flex-col text-stone-900">

@@ -236,11 +236,11 @@ function TestimonialSection() {
         </p>
       </header>
       <div className="mb-10 mt-11 flex w-full flex-col pl-16 max-md:mt-10 max-md:max-w-full max-md:pl-5">
-        <section
-          className="scroll-hide max-md:scroll-hide overflow-x-auto max-md:max-w-full max-md:overflow-x-auto"
-          ref={sliderRef}
-        >
-          <div className="flex gap-5 max-md:flex max-md:gap-5">
+        <section>
+          <div
+            className="scroll-hide max-md:scroll-hide flex snap-x snap-mandatory gap-5 overflow-x-auto max-md:flex max-md:max-w-full max-md:gap-5 max-md:overflow-x-auto"
+            ref={sliderRef}
+          >
             {testimonials.map((testimonial, index) => (
               <Testimonial
                 key={index}

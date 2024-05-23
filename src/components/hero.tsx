@@ -51,7 +51,7 @@ export function Hero() {
               }}
               width="400"
             />
-            <div className="absolute right-0 top-0 w-72 rounded-lg bg-white p-6 shadow-lg">
+            <div className="absolute right-0 top-0 w-72 rounded-lg bg-white p-6 shadow-lg md:right-10">
               <div className="mb-4 flex items-center">
                 <Avatar>
                   <AvatarImage
@@ -67,19 +67,6 @@ export function Hero() {
                 </div>
               </div>
               <Button className="w-full">Get started with EduLink</Button>
-            </div>
-            <div className="absolute -bottom-8 -right-8">
-              <img
-                alt="Person learning"
-                className="rounded-xl"
-                height="200"
-                src="/placeholder.svg"
-                style={{
-                  aspectRatio: "200/200",
-                  objectFit: "cover",
-                }}
-                width="200"
-              />
             </div>
           </div>
         </div>
