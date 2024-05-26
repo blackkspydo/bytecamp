@@ -15,62 +15,65 @@ import { JSX, SVGProps } from "react";
 
 export function CourseCard() {
   return (
-    <Card
-      key="1"
-      className="relative w-full shadow-none min-w-[380px] max-w-[433px] rounded-[12px] border-none bg-white p-1"
-    >
-      <CardHeader className="absolute right-5 top-5 flex flex-row items-center gap-2 rounded-full border bg-white p-1">
-        <Avatar>
-          <AvatarImage
-            alt="Billy Vasquez"
-            className="object-cover"
-            src="https://fastly.picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg"
-          />
-          <AvatarFallback>BV</AvatarFallback>
-        </Avatar>
-        <div className="mr-2 pb-2 text-sm font-semibold">Billy Vasquez</div>
-      </CardHeader>
-      <CardContent className="flex flex-col items-start p-2">
-        <div className="mb-4 max-h-[250px] w-full overflow-hidden rounded-[8px]">
-          <Image
-            alt="Graphic Design Masterclass"
-            className="h-full w-full"
-            src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
-            style={{
-              aspectRatio: "128/128",
-              objectFit: "cover",
-            }}
-            width="500"
-            height="400"
-          />
-        </div>
-        <div className="p-4">
-          <div className="mb-3 text-xl font-bold">
-            Graphic Design Masterclass
+    <div className="group relative w-full min-w-[380px] max-w-[433px] rounded-[12px] border-none bg-white  shadow-none">
+      <Card
+        key="1"
+        className="relative !z-10 w-full min-w-[380px] max-w-[433px] cursor-pointer rounded-[12px] border-none bg-white p-1 shadow-none"
+      >
+        <CardHeader className="absolute right-5 top-5 flex flex-row items-center gap-2 rounded-full border bg-white p-1">
+          <Avatar>
+            <AvatarImage
+              alt="Billy Vasquez"
+              className="object-cover"
+              src="https://fastly.picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg"
+            />
+            <AvatarFallback>BV</AvatarFallback>
+          </Avatar>
+          <div className="mr-2 pb-2 text-sm font-semibold">Billy Vasquez</div>
+        </CardHeader>
+        <CardContent className="flex flex-col items-start p-2">
+          <div className="mb-4 max-h-[250px] w-full overflow-hidden rounded-[8px]">
+            <Image
+              alt="Graphic Design Masterclass"
+              className="h-full w-full"
+              src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
+              style={{
+                aspectRatio: "128/128",
+                objectFit: "cover",
+              }}
+              width="500"
+              height="400"
+            />
           </div>
-          <div className="flex items-center justify-center space-x-4 text-sm text-gray-600">
-            <div className="flex items-center justify-start gap-2">
-              <ListIcon className="h-4 w-4" />
-              <span className="whitespace-nowrap">140 Sections</span>
+          <div className="p-4">
+            <div className="mb-3 text-xl font-bold">
+              Graphic Design Masterclass
             </div>
-            <div className="flex items-center justify-start gap-2">
-              <CalendarIcon className="h-4 w-4" />
-              <span className="whitespace-nowrap">90 Days</span>
-            </div>
-            <div className="flex items-center justify-start gap-2">
-              <GroupIcon className="h-4 w-4" />
-              <span className="whitespace-nowrap">80 Students</span>
+            <div className="flex items-center justify-center space-x-4 text-sm text-gray-600">
+              <div className="flex items-center justify-start gap-2">
+                <ListIcon className="h-4 w-4" />
+                <span className="whitespace-nowrap">140 Sections</span>
+              </div>
+              <div className="flex items-center justify-start gap-2">
+                <CalendarIcon className="h-4 w-4" />
+                <span className="whitespace-nowrap">90 Days</span>
+              </div>
+              <div className="flex items-center justify-start gap-2">
+                <GroupIcon className="h-4 w-4" />
+                <span className="whitespace-nowrap">80 Students</span>
+              </div>
             </div>
           </div>
-        </div>
-      </CardContent>
-      <CardFooter className="pt-4">
-        <div className="flex w-full flex-row items-center justify-start gap-4 text-center">
-          <div className="text-2xl text-[#89B597] font-bold">NPR 450</div>
-          <div className="text-sm text-gray-500 line-through">NPR 460</div>
-        </div>
-      </CardFooter>
-    </Card>
+        </CardContent>
+        <CardFooter className="pt-4">
+          <div className="flex w-full flex-row items-center justify-start gap-4 text-center">
+            <div className="text-2xl font-bold text-[#89B597]">NPR 450</div>
+            <div className="text-sm text-gray-500 line-through">NPR 460</div>
+          </div>
+        </CardFooter>
+      </Card>
+      <div className="absolute bottom-0 left-0 right-0 top-0 z-[0] h-full w-full rounded-[12px] bg-black transition-all duration-100 group-hover:left-2 group-hover:top-2"></div>
+    </div>
   );
 }
 
