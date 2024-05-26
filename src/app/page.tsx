@@ -1,5 +1,6 @@
 import BlogSection from "@/components/blog-section";
 import { CallbackForm } from "@/components/callback-form";
+import { Community } from "@/components/community";
 import CoursesSection from "@/components/courses";
 import { Hero } from "@/components/hero";
 import { LastCta } from "@/components/last-cta";
@@ -16,6 +17,7 @@ export default function HomePage() {
       <CoursesSection />
       <TestimonialSection />
       <CallbackForm />
+      <Community />
       <BlogSection />
     </main>
   );
